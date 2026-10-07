@@ -14,19 +14,27 @@ const FEATURED_IDS = [
 const pitches = [
   {
     title: 'Officially licensed',
-    text: "Every stitch is the real deal. I don't sell knockoffs. I've got enough fake things to deal with at my day job.",
+    text: "Every stitch is the real McCoy. We don't do knockoffs — a counterfeit Yale hoodie is like a screen door on a submarine: looks fine till it matters. If it's on our rack, Yale put its name on it.",
     dog: '/art/bulldog-1.svg',
   },
   {
     title: 'Every Bulldog in the family',
-    text: "Students, alumni, moms, dads, grandpas, and that one cousin who claims he almost got in. We've got a shirt for him too.",
+    text: "Students, alumni, mamas, grandpas, and that cousin who swears he almost got in. We'll dress him too — his money spends the same, bless his heart.",
     dog: '/art/bulldog-2.svg',
   },
   {
     title: 'Colleges, schools, and sports',
-    text: 'Residential colleges, grad schools, and varsity teams from fencing to field hockey. Pick a side. Wear it proud.',
+    text: "Residential colleges, grad schools, and teams from fencing to field hockey. Pick your side and wear it proud. Fence-sitting's uncomfortable, and it's bad for the fence.",
     dog: '/art/bulldog-3.svg',
   },
+]
+
+// A few more Senator-Kennedy-style straight-talk quips for the home page.
+const quips = [
+  "A good sweatshirt is like a good friend: there when it's cold, doesn't ask questions, and never once filibustered.",
+  "Our prices are honest. If you find cheaper Yale gear, it's either a knockoff or it fell off a truck — and that truck wasn't ours.",
+  "This fleece is softer than a two-dollar steak and twice as satisfying.",
+  "Buy the hoodie. Life's too short to be cold and underdressed at The Game.",
 ]
 
 // Our celebrity spokesman, Picolas Page, each portrait paired with the men's
@@ -71,9 +79,10 @@ export default function Home() {
           <p className="eyebrow">Yale Bulldog Blue · by Campus Customs</p>
           <h1>Bulldog blue, made simple.</h1>
           <p className="lede">
-            Look, I'm not saying a Yale hoodie will make you smarter. I'm saying nobody's ever looked
-            dumber wearing one. We're right on Broadway in New Haven, and we sell officially licensed
-            Yale gear that's comfortable, durable, and bluer than a cold day in Connecticut.
+            Look, I'm not saying a Yale hoodie will make you smarter. I'm saying nobody ever looked
+            dumber in one. We're right on Broadway in New Haven, selling officially licensed Yale
+            gear that's comfortable, built to last, and bluer than a hound dog in a snowstorm. Come
+            on in — the coffee's free and the sweatshirts are worth every nickel.
           </p>
           <div className="hero-actions">
             <Link to="/products" className="btn">
@@ -136,11 +145,17 @@ export default function Home() {
         </section>
       )}
 
-      <section className="quote-band">
-        <p>
-          "A good sweatshirt is like a good friend. It's there when it's cold, it doesn't ask
-          questions, and it's never once filibustered."
-        </p>
+      <section>
+        <div className="section-head">
+          <h2>Straight talk from the shop</h2>
+        </div>
+        <div className="quip-grid">
+          {quips.map((q) => (
+            <blockquote key={q} className="quip">
+              {q}
+            </blockquote>
+          ))}
+        </div>
       </section>
     </>
   )

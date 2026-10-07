@@ -205,3 +205,9 @@ Finish output/harness.md so it is clear how the system works.
 * Tools and abilities
 * Safety rules
 * Specs (loop limits, result caps, models, how to run front + back)
+
+## Problem 13: Push to GitHub and submit the URL
+
+### Prompt 1
+
+Yes - put today's code in hw4 and push it to a public GitHub repository. Display the repo URL. Do not put my real .env, campus_customs.db, or product images in the GitHub repo. Use .gitignore. Include .env.example with placeholders only.

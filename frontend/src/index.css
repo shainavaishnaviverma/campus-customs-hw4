@@ -1113,3 +1113,27 @@ h3 {
   box-shadow: 0 6px 16px rgba(0, 37, 74, 0.3);
 }
 .spokes-card:hover .spokes-badge { transform: scale(1.06); transition: transform 0.15s ease; }
+
+/* Straight-talk quip cards */
+.quip-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.quip {
+  margin: 0;
+  padding: 1.25rem 1.4rem;
+  background: var(--surface);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-3d);
+  font-family: Georgia, serif;
+  font-style: italic;
+  font-size: 1.05rem;
+  color: var(--yale-blue);
+  position: relative;
+  border-left: 6px solid transparent;
+  border-image: var(--rainbow) 1;
+}
+.quip::before { content: '\201C'; font-size: 1.4rem; opacity: 0.5; }
+.quip::after { content: '\201D'; font-size: 1.4rem; opacity: 0.5; }

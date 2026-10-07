@@ -18,6 +18,13 @@ export default function About() {
         engineers in here asking for discounts.
       </p>
 
+      <p>
+        Here's our whole business plan, and you can have it for free: sell good gear, treat people
+        right, and don't insult their intelligence. That's it. Some folks dress that up with fancy
+        words and a slide deck. We just hang it on a rack. A fair deal isn't complicated — it's just
+        rare, like an honest man at an auction.
+      </p>
+
       <h2>What we stand for</h2>
       <ul>
         <li>
@@ -42,7 +49,13 @@ export default function About() {
       <h2>Why it matters</h2>
       <p>
         Wearing your school's colors is a small thing that says a big thing: you belong somewhere,
-        and you're proud of it. That's worth more than a fancy speech, and it costs a lot less.
+        and you're proud of it. That's worth more than a fancy speech, and it costs a lot less. You
+        can't buy school spirit, but you can buy the sweatshirt — and around here that's close enough.
+      </p>
+      <p>
+        We'd rather sell you one hoodie you love than three you'll leave in the closet. Quality over
+        quantity: a man with one good sweatshirt knows he's warm; a man with ten is just doing
+        laundry.
       </p>
 
       <p>

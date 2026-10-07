@@ -1,35 +1,41 @@
-<svg viewBox="0 0 320 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Cute happy Yale bulldog puppy">
+<svg viewBox="0 0 320 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Cute animated happy Yale bulldog puppy">
   <defs>
-    <radialGradient id="c3bg" cx="50%" cy="38%" r="72%">
+    <radialGradient id="a3bg" cx="50%" cy="38%" r="72%">
       <stop offset="0%" stop-color="#ffeede"/><stop offset="100%" stop-color="#ffc7ad"/>
     </radialGradient>
-    <linearGradient id="c3fur" x1="0" y1="0" x2="0" y2="1">
+    <linearGradient id="a3fur" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%" stop-color="#fce7d2"/><stop offset="100%" stop-color="#ebc89f"/>
     </linearGradient>
+    <style>
+      @keyframes hop3 { 0%,100%{transform:translateY(0) scale(1,1)} 25%{transform:translateY(-10px) scale(.98,1.02)} 50%{transform:translateY(0) scale(1.03,.97)} }
+      @keyframes earL3 { 0%,100%{transform:rotate(-20deg)} 50%{transform:rotate(-34deg)} }
+      @keyframes earR3 { 0%,100%{transform:rotate(20deg)} 50%{transform:rotate(34deg)} }
+      @keyframes tongue3 { 0%,100%{transform:translateY(0) rotate(0)} 50%{transform:translateY(4px) rotate(4deg)} }
+      @keyframes sparkle3 { 0%,100%{opacity:.2; transform:scale(.6)} 50%{opacity:1; transform:scale(1.2)} }
+      #dog3 { animation: hop3 2.2s ease-in-out infinite; transform-box: fill-box; transform-origin: center bottom; }
+      #earL3 { animation: earL3 2.2s ease-in-out infinite; transform-box: fill-box; transform-origin: 85% 15%; }
+      #earR3 { animation: earR3 2.2s ease-in-out infinite; transform-box: fill-box; transform-origin: 15% 15%; }
+      #tongue3 { animation: tongue3 1.4s ease-in-out infinite; transform-box: fill-box; transform-origin: top; }
+      .spark3 { animation: sparkle3 1.8s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+      .spark3.b { animation-delay: .9s; }
+    </style>
   </defs>
-  <rect width="320" height="320" rx="30" fill="url(#c3bg)"/>
+  <rect width="320" height="320" rx="30" fill="url(#a3bg)"/>
   <ellipse cx="160" cy="292" rx="94" ry="15" fill="#c06a40" opacity="0.18"/>
-  <g transform="rotate(-6 160 160)">
-    <!-- ears -->
-    <ellipse cx="82" cy="140" rx="27" ry="40" fill="#d8ac7e" transform="rotate(-20 82 140)"/>
-    <ellipse cx="238" cy="140" rx="27" ry="40" fill="#d8ac7e" transform="rotate(20 238 140)"/>
-    <!-- round head -->
-    <circle cx="160" cy="150" r="88" fill="url(#c3fur)"/>
-    <!-- rosy cheeks -->
-    <circle cx="106" cy="178" r="17" fill="#ffc2cf" opacity="0.8"/>
-    <circle cx="214" cy="178" r="17" fill="#ffc2cf" opacity="0.8"/>
-    <!-- happy closed eyes (sparkly curves) -->
-    <path d="M110 146 q16 -18 34 0" stroke="#3a2a22" stroke-width="7" fill="none" stroke-linecap="round"/>
-    <path d="M176 146 q16 -18 34 0" stroke="#3a2a22" stroke-width="7" fill="none" stroke-linecap="round"/>
-    <!-- sparkles -->
-    <circle cx="150" cy="128" r="3" fill="#fff"/><circle cx="208" cy="124" r="2.5" fill="#fff"/>
-    <!-- muzzle + nose -->
-    <ellipse cx="160" cy="188" rx="40" ry="30" fill="#fff7ee"/>
-    <ellipse cx="160" cy="180" rx="13" ry="9" fill="#5b4038"/>
-    <!-- big open happy smile + tongue -->
-    <path d="M160 188 v8 M132 200 q28 30 56 0" stroke="#9c7b64" stroke-width="4" fill="none" stroke-linecap="round"/>
-    <path d="M144 206 q16 26 32 0 Z" fill="#ff93a8"/>
+  <g id="dog3">
+    <ellipse id="earL3" cx="82" cy="140" rx="27" ry="42" fill="#d8ac7e"/>
+    <ellipse id="earR3" cx="238" cy="140" rx="27" ry="42" fill="#d8ac7e"/>
+    <circle cx="160" cy="150" r="90" fill="url(#a3fur)"/>
+    <circle cx="104" cy="178" r="17" fill="#ffc2cf" opacity="0.85"/>
+    <circle cx="216" cy="178" r="17" fill="#ffc2cf" opacity="0.85"/>
+    <path d="M108 146 q16 -20 36 0" stroke="#3a2a22" stroke-width="8" fill="none" stroke-linecap="round"/>
+    <path d="M176 146 q16 -20 36 0" stroke="#3a2a22" stroke-width="8" fill="none" stroke-linecap="round"/>
+    <circle class="spark3" cx="150" cy="126" r="3.5" fill="#fff"/>
+    <circle class="spark3 b" cx="210" cy="122" r="3" fill="#fff"/>
+    <ellipse cx="160" cy="188" rx="41" ry="31" fill="#fff7ee"/>
+    <ellipse cx="160" cy="180" rx="14" ry="10" fill="#5b4038"/>
+    <path d="M160 188 v8 M132 200 q28 32 56 0" stroke="#9c7b64" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <path id="tongue3" d="M144 206 q16 28 32 0 Z" fill="#ff93a8"/>
   </g>
-  <!-- navy bandana -->
   <path d="M94 240 q66 36 132 0 l-10 22 q-56 28 -112 0 Z" fill="#00356b"/>
 </svg>
