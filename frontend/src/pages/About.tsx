@@ -7,7 +7,7 @@ export default function About() {
       <h1>We sell sweatshirts. We're good at it.</h1>
 
       <div className="about-hero">
-        <img src="/art/spokesman-2.svg" alt="Campus Customs spokesman in a Harvard-Yale tee" />
+        <img src="/art/cage-2.jpg" alt="Picolas Page, Campus Customs spokesman" />
         <img className="bulldog-float" src="/art/bulldog-2.svg" alt="Yale bulldog in a sweater" />
       </div>
 

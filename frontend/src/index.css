@@ -1084,3 +1084,32 @@ h3 {
   box-shadow: var(--shadow-3d);
   transform: rotate(-2deg);
 }
+
+.hero-art img {
+  object-fit: cover;
+  aspect-ratio: 4 / 3;
+}
+
+/* Spokesman endorsement cards: portrait + product badge */
+.spokes-card { color: inherit; display: block; }
+.spokes-photo { position: relative; }
+.spokes-photo > img:first-child {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  display: block;
+}
+.spokes-photo .spokes-badge {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  width: 78px;
+  height: 78px;
+  aspect-ratio: auto;
+  object-fit: contain;
+  background: #fff;
+  border: 3px solid #fff;
+  border-radius: 14px;
+  box-shadow: 0 6px 16px rgba(0, 37, 74, 0.3);
+}
+.spokes-card:hover .spokes-badge { transform: scale(1.06); transition: transform 0.15s ease; }

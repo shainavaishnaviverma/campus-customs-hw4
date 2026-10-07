@@ -29,12 +29,30 @@ const pitches = [
   },
 ]
 
-// Original caricature art of our (very dramatic) celebrity spokesman, each in a
-// different men's item. Placeholders for licensed photography.
+// Our celebrity spokesman, Picolas Page, each portrait paired with the men's
+// item he's endorsing (product thumbnail + link to its page).
 const spokesmen = [
-  { img: '/art/spokesman-1.svg', caption: 'The Big YALE Hoodie — hood up, standards higher' },
-  { img: '/art/spokesman-2.svg', caption: 'Harvard-Yale tee — worn with menace and joy' },
-  { img: '/art/spokesman-3.svg', caption: 'The quarter-zip — for the dramatic alumnus' },
+  {
+    img: '/art/cage-1.jpg',
+    productId: 'basic-hoodie-big-yale',
+    product: 'Basic Hoodie Big Yale',
+    price: '$68',
+    productImg: '/media/products/basic-hoodie-big-yale.jpg',
+  },
+  {
+    img: '/art/cage-2.jpg',
+    productId: '2025-yale-vs-harvard-t-shirt',
+    product: '2025 Yale vs. Harvard Tee',
+    price: '$32',
+    productImg: '/media/products/2025-yale-vs-harvard-t-shirt.jpg',
+  },
+  {
+    img: '/art/cage-3.jpg',
+    productId: 'baseball-left-chest-crewneck',
+    product: 'Baseball Left Chest Crewneck',
+    price: '$58',
+    productImg: '/media/products/baseball-left-chest-crewneck.jpg',
+  },
 ]
 
 export default function Home() {
@@ -67,7 +85,7 @@ export default function Home() {
           </div>
         </div>
         <div className="hero-art">
-          <img src="/art/spokesman-1.svg" alt="Campus Customs spokesman in a navy Yale hoodie" />
+          <img src="/art/cage-1.jpg" alt="Picolas Page, Campus Customs spokesman" />
         </div>
       </section>
 
@@ -83,17 +101,23 @@ export default function Home() {
 
       <section>
         <div className="section-head">
-          <h2>As seen on our spokesman</h2>
+          <h2>As seen on Picolas Page</h2>
         </div>
         <p className="muted">
-          Our wildly committed (and entirely fictional) spokesman, modeling the men's line.
+          Our wildly committed celebrity spokesman, Picolas Page, endorsing the men's line —
+          tap his pick to shop it.
         </p>
         <div className="spokes-gallery">
           {spokesmen.map((s) => (
-            <figure key={s.img} className="spokes-card">
-              <img src={s.img} alt={s.caption} />
-              <figcaption>{s.caption}</figcaption>
-            </figure>
+            <Link key={s.img} to={`/products/${s.productId}`} className="spokes-card">
+              <div className="spokes-photo">
+                <img src={s.img} alt={`Picolas Page endorsing the ${s.product}`} />
+                <img className="spokes-badge" src={s.productImg} alt="" aria-hidden="true" />
+              </div>
+              <figcaption>
+                Picolas Page’s pick: <strong>{s.product}</strong> · {s.price}
+              </figcaption>
+            </Link>
           ))}
         </div>
       </section>
