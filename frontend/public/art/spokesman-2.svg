@@ -1,0 +1,35 @@
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Campus Customs spokesman in a Harvard-Yale tee">
+  <defs>
+    <radialGradient id="s2bg" cx="50%" cy="35%" r="75%">
+      <stop offset="0%" stop-color="#ffd9ec"/><stop offset="100%" stop-color="#ffb3d6"/>
+    </radialGradient>
+    <linearGradient id="s2tee" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#eef1f5"/><stop offset="100%" stop-color="#c9d2dc"/>
+    </linearGradient>
+    <linearGradient id="s2skin" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f3cbaa"/><stop offset="100%" stop-color="#dfa77e"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" rx="28" fill="url(#s2bg)"/>
+  <ellipse cx="200" cy="356" rx="150" ry="26" fill="#8a2d5a" opacity="0.18"/>
+  <!-- tee -->
+  <path d="M96 400 C100 306 132 282 200 282 C268 282 300 306 304 400 Z" fill="url(#s2tee)"/>
+  <path d="M168 284 q32 30 64 0 l-10 26 q-22 14 -44 0 Z" fill="#dbe2ea"/>
+  <circle cx="200" cy="344" r="28" fill="#00356b"/>
+  <text x="200" y="352" text-anchor="middle" font-family="Georgia, serif" font-size="30" font-weight="700" fill="#ffffff">Y</text>
+  <!-- neck + head -->
+  <rect x="182" y="236" width="36" height="52" rx="16" fill="url(#s2skin)"/>
+  <ellipse cx="200" cy="186" rx="64" ry="70" fill="url(#s2skin)"/>
+  <!-- swept hair -->
+  <path d="M136 176 C130 104 270 104 264 176 C256 140 240 126 200 126 C150 120 150 150 136 176 Z" fill="#241a12"/>
+  <path d="M140 150 C180 120 240 126 258 150" stroke="#3a2a1d" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <!-- big grin, wide eyes (dramatic) -->
+  <path d="M158 166 q20 -10 38 0" stroke="#241a12" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <path d="M206 166 q18 -10 36 0" stroke="#241a12" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <circle cx="178" cy="186" r="7" fill="#2a2320"/>
+  <circle cx="224" cy="186" r="7" fill="#2a2320"/>
+  <circle cx="180" cy="184" r="2" fill="#fff"/>
+  <circle cx="226" cy="184" r="2" fill="#fff"/>
+  <path d="M199 192 l-6 16 h14 Z" fill="#cf9b74"/>
+  <path d="M172 214 q28 26 56 0 q-28 10 -56 0 Z" fill="#fff" stroke="#9c5a3c" stroke-width="4"/>
+</svg>

@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Campus Customs — App Check (Problem 11)</title>
+    <style>
+      :root {
+        --yale-blue: #00356b;
+        --border: #e1e5eb;
+        --muted: #5b6676;
+      }
+      * { box-sizing: border-box; }
+      body {
+        font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+        color: #1c2430;
+        line-height: 1.55;
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 2rem 1.25rem 4rem;
+        background: #f7f8fa;
+      }
+      header.page-head {
+        border-bottom: 4px solid var(--yale-blue);
+        padding-bottom: 1rem;
+        margin-bottom: 2rem;
+      }
+      h1 { color: var(--yale-blue); margin: 0 0 0.25rem; }
+      .sub { color: var(--muted); margin: 0; }
+      section {
+        background: #fff;
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 1.25rem 1.5rem 1.5rem;
+        margin-bottom: 2rem;
+        box-shadow: 0 4px 14px rgba(0, 37, 74, 0.06);
+      }
+      h2 { color: var(--yale-blue); margin: 0 0 0.75rem; font-size: 1.25rem; }
+      .tag {
+        display: inline-block;
+        font-size: 0.75rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: var(--yale-blue);
+        background: #e8f0fb;
+        border-radius: 999px;
+        padding: 0.15rem 0.6rem;
+        margin-bottom: 0.5rem;
+      }
+      img.shot {
+        width: 100%;
+        height: auto;
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        display: block;
+        margin: 0.5rem 0 0.75rem;
+      }
+      p.caption { margin: 0; }
+      p.caption strong { color: var(--yale-blue); }
+      footer { color: var(--muted); font-size: 0.85rem; text-align: center; }
+    </style>
+  </head>
+  <body>
+    <header class="page-head">
+      <h1>Campus Customs — Live Site App Check</h1>
+      <p class="sub">HW4 Problem 11 · screenshots captured from the running app (React/Vite front end + FastAPI/PydanticAI back end)</p>
+    </header>
+
+    <section>
+      <span class="tag">Check 1 · Inventory &amp; price from the database</span>
+      <h2>Chat reports honest stock and price</h2>
+      <img class="shot" src="app_check_images/inventory.png" alt="Chat answering a stock question for the Fencing Left Chest Hoodie" />
+      <p class="caption">
+        Asked the assistant how many <strong>Fencing Left Chest Hoodies</strong> are in stock by size and the price.
+        It answered <strong>$68</strong> with exact per-size counts (M&nbsp;15, L&nbsp;0, XL&nbsp;2, XXL&nbsp;0) and
+        <strong>29 total — available in S, M, and XL</strong>. These numbers match the <code>campus_customs.db</code>
+        inventory and catalogue tables exactly, proving the agent reads live data and never invents stock or price.
+      </p>
+    </section>
+
+    <section>
+      <span class="tag">Check 2 · Dynamic search results on the page</span>
+      <h2>A category question fills the Products page with cards</h2>
+      <img class="shot" src="app_check_images/search_cards.png" alt="Products page showing 8 hoodie cards after a chat question" />
+      <p class="caption">
+        After asking <strong>“What hoodies do you have?”</strong> in the chat, the site navigated to the Products page
+        and rendered the matching items as <strong>product cards</strong> (image, name, price, short description) under a
+        banner that names the query. This shows chat search results flowing onto the page dynamically; each card still
+        opens its single-item detail view when clicked.
+      </p>
+    </section>
+
+    <section>
+      <span class="tag">Check 3 · Problem 9 usability feature</span>
+      <h2>Filter &amp; sort bar on the Products page</h2>
+      <img class="shot" src="app_check_images/usability_filters.png" alt="Products page filtered to in-stock hoodies, sorted by price low to high" />
+      <p class="caption">
+        The Products page filtered to the <strong>Hoodies</strong> category with <strong>“In stock only”</strong> checked
+        and sorted <strong>Price: Low → High</strong>. The grid updates to 27 items with the cheapest first
+        ($45, $45, …), demonstrating the shopping filter/sort usability feature added in Problem 9.
+      </p>
+    </section>
+
+    <footer>
+      Generated for HW4 Problem 11 · open this file directly in a browser to review the three checks.
+    </footer>
+  </body>
+</html>

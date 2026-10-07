@@ -1,0 +1,24 @@
+# --- secrets: never commit ---
+.env
+.env.*
+!.env.example
+backend/.session_secret
+*.session_secret
+
+# --- data excluded from the public repo (provide these locally) ---
+data/campus_customs.db
+data/products/
+data.zip
+
+# --- python ---
+backend/.venv/
+.venv/
+__pycache__/
+*.pyc
+
+# --- node / build ---
+node_modules/
+frontend/dist/
+
+# --- misc ---
+.DS_Store
