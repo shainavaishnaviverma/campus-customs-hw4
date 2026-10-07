@@ -1072,18 +1072,40 @@ h3 {
   position: relative;
   z-index: 1;
 }
+@keyframes softbounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
 .about-hero {
-  display: flex;
-  align-items: flex-end;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 1rem;
-  margin: 1rem 0 1.5rem;
+  align-items: center;
+  max-width: 540px;
+  margin: 1.25rem 0 1.75rem;
 }
-.about-hero > img:first-child {
-  width: min(260px, 60%);
+.about-hero img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
   border-radius: 18px;
+  background: #fff;
   box-shadow: var(--shadow-3d);
-  transform: rotate(-2deg);
 }
+.about-hero img:first-child {
+  animation: softbounce 2.8s ease-in-out infinite;
+}
+.about-hero img:last-child {
+  animation: softbounce 2.8s ease-in-out infinite 0.35s;
+}
+
+/* let the spokesman portraits bounce in the gallery too */
+.spokes-photo > img:first-child {
+  animation: softbounce 3.2s ease-in-out infinite;
+}
+.spokes-card:nth-child(2) .spokes-photo > img:first-child { animation-delay: 0.3s; }
+.spokes-card:nth-child(3) .spokes-photo > img:first-child { animation-delay: 0.6s; }
 
 .hero-art img {
   object-fit: cover;

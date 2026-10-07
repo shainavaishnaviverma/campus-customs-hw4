@@ -8,7 +8,7 @@ export default function About() {
 
       <div className="about-hero">
         <img src="/art/cage-2.jpg" alt="Picolas Page, Campus Customs spokesman" />
-        <img className="bulldog-float" src="/art/bulldog-2.svg" alt="Yale bulldog in a sweater" />
+        <img src="/art/bulldog-2.svg" alt="Yale bulldog in a sweater" />
       </div>
 
       <p>

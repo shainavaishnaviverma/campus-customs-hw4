@@ -1,41 +1,51 @@
-<svg viewBox="0 0 320 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Cute animated happy Yale bulldog puppy">
+<svg viewBox="0 0 320 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Cute animated happy Yale bulldog">
   <defs>
     <radialGradient id="a3bg" cx="50%" cy="38%" r="72%">
       <stop offset="0%" stop-color="#ffeede"/><stop offset="100%" stop-color="#ffc7ad"/>
     </radialGradient>
     <linearGradient id="a3fur" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#fce7d2"/><stop offset="100%" stop-color="#ebc89f"/>
+      <stop offset="0%" stop-color="#fbe7d1"/><stop offset="100%" stop-color="#e4c197"/>
     </linearGradient>
     <style>
-      @keyframes hop3 { 0%,100%{transform:translateY(0) scale(1,1)} 25%{transform:translateY(-10px) scale(.98,1.02)} 50%{transform:translateY(0) scale(1.03,.97)} }
-      @keyframes earL3 { 0%,100%{transform:rotate(-20deg)} 50%{transform:rotate(-34deg)} }
-      @keyframes earR3 { 0%,100%{transform:rotate(20deg)} 50%{transform:rotate(34deg)} }
-      @keyframes tongue3 { 0%,100%{transform:translateY(0) rotate(0)} 50%{transform:translateY(4px) rotate(4deg)} }
+      @keyframes hop3 { 0%,100%{transform:translateY(0) scale(1,1)} 25%{transform:translateY(-10px) scale(.98,1.02)} 55%{transform:translateY(0) scale(1.04,.96)} }
+      @keyframes earL3 { 0%,100%{transform:rotate(0)} 50%{transform:rotate(-16deg)} }
+      @keyframes earR3 { 0%,100%{transform:rotate(0)} 50%{transform:rotate(16deg)} }
+      @keyframes tongue3 { 0%,100%{transform:translateY(0)} 50%{transform:translateY(4px)} }
       @keyframes sparkle3 { 0%,100%{opacity:.2; transform:scale(.6)} 50%{opacity:1; transform:scale(1.2)} }
       #dog3 { animation: hop3 2.2s ease-in-out infinite; transform-box: fill-box; transform-origin: center bottom; }
-      #earL3 { animation: earL3 2.2s ease-in-out infinite; transform-box: fill-box; transform-origin: 85% 15%; }
-      #earR3 { animation: earR3 2.2s ease-in-out infinite; transform-box: fill-box; transform-origin: 15% 15%; }
+      #earL3 { animation: earL3 2.2s ease-in-out infinite; transform-box: fill-box; transform-origin: 80% 90%; }
+      #earR3 { animation: earR3 2.2s ease-in-out infinite; transform-box: fill-box; transform-origin: 20% 90%; }
       #tongue3 { animation: tongue3 1.4s ease-in-out infinite; transform-box: fill-box; transform-origin: top; }
       .spark3 { animation: sparkle3 1.8s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
       .spark3.b { animation-delay: .9s; }
     </style>
   </defs>
   <rect width="320" height="320" rx="30" fill="url(#a3bg)"/>
-  <ellipse cx="160" cy="292" rx="94" ry="15" fill="#c06a40" opacity="0.18"/>
+  <ellipse cx="160" cy="296" rx="98" ry="15" fill="#c06a40" opacity="0.18"/>
   <g id="dog3">
-    <ellipse id="earL3" cx="82" cy="140" rx="27" ry="42" fill="#d8ac7e"/>
-    <ellipse id="earR3" cx="238" cy="140" rx="27" ry="42" fill="#d8ac7e"/>
-    <circle cx="160" cy="150" r="90" fill="url(#a3fur)"/>
-    <circle cx="104" cy="178" r="17" fill="#ffc2cf" opacity="0.85"/>
-    <circle cx="216" cy="178" r="17" fill="#ffc2cf" opacity="0.85"/>
-    <path d="M108 146 q16 -20 36 0" stroke="#3a2a22" stroke-width="8" fill="none" stroke-linecap="round"/>
-    <path d="M176 146 q16 -20 36 0" stroke="#3a2a22" stroke-width="8" fill="none" stroke-linecap="round"/>
-    <circle class="spark3" cx="150" cy="126" r="3.5" fill="#fff"/>
-    <circle class="spark3 b" cx="210" cy="122" r="3" fill="#fff"/>
-    <ellipse cx="160" cy="188" rx="41" ry="31" fill="#fff7ee"/>
-    <ellipse cx="160" cy="180" rx="14" ry="10" fill="#5b4038"/>
-    <path d="M160 188 v8 M132 200 q28 32 56 0" stroke="#9c7b64" stroke-width="4" fill="none" stroke-linecap="round"/>
-    <path id="tongue3" d="M144 206 q16 28 32 0 Z" fill="#ff93a8"/>
+    <path id="earL3" d="M80 92 q-33 -6 -39 25 q25 10 46 -6 Z" fill="#cda373"/>
+    <path id="earR3" d="M240 92 q33 -6 39 25 q-25 10 -46 -6 Z" fill="#cda373"/>
+    <ellipse cx="160" cy="148" rx="100" ry="85" fill="url(#a3fur)"/>
+    <path d="M139 118 q21 -15 42 0" stroke="#c9a373" stroke-width="5" fill="none" stroke-linecap="round"/>
+    <path d="M147 106 q13 -9 26 0" stroke="#c9a373" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <circle cx="98" cy="174" r="17" fill="#ffc2cf" opacity="0.85"/>
+    <circle cx="222" cy="174" r="17" fill="#ffc2cf" opacity="0.85"/>
+    <!-- happy arched eyes -->
+    <path d="M100 142 q18 -20 38 0" stroke="#3a2a22" stroke-width="8" fill="none" stroke-linecap="round"/>
+    <path d="M182 142 q18 -20 38 0" stroke="#3a2a22" stroke-width="8" fill="none" stroke-linecap="round"/>
+    <circle class="spark3" cx="150" cy="120" r="3.5" fill="#fff"/>
+    <circle class="spark3 b" cx="214" cy="116" r="3" fill="#fff"/>
+    <!-- jowls -->
+    <path d="M106 186 q-6 52 40 56 q-28 -24 -8 -56 Z" fill="#f1dcc0"/>
+    <path d="M214 186 q6 52 -40 56 q28 -24 8 -56 Z" fill="#f1dcc0"/>
+    <!-- wide muzzle + big open happy mouth -->
+    <ellipse cx="160" cy="190" rx="64" ry="44" fill="#fff7ee"/>
+    <ellipse cx="160" cy="176" rx="21" ry="13" fill="#5b4038"/>
+    <path d="M160 189 v9 M126 202 q34 34 68 0" stroke="#9c7b64" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <path d="M132 206 q28 30 56 0 Z" fill="#8a3b3b"/>
+    <path id="tongue3" d="M146 212 q14 26 28 0 Z" fill="#ff93a8"/>
+    <rect x="146" y="203" width="8" height="10" rx="2" fill="#fff"/>
+    <rect x="166" y="203" width="8" height="10" rx="2" fill="#fff"/>
   </g>
-  <path d="M94 240 q66 36 132 0 l-10 22 q-56 28 -112 0 Z" fill="#00356b"/>
+  <path d="M90 240 q70 38 140 0 l-10 22 q-60 28 -120 0 Z" fill="#00356b"/>
 </svg>
